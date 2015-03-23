@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<link rel="stylesheet"  href="css/estilos.css">
+	<meta charset="UTF-8">
+	<title>DowYon</title>
+</head>
+
+<body background="pictures/fondo5.jpg">
+	<table>
+		<tr>
+			<td>
+				<img src="pictures/aaa.jpg"border="0" width="150" height="100">
+			</td>
+		</tr>
+	</table>
+
+	<table style="margin: 0 auto;">
+		<tr>
+			<td>
+				<label>Buscar archivo</label>
+			</td>
+			<td>
+				<input type="text" name="txtbuscar" value="buscar" size="15" onclick="if(this.value=='buscar') this.value=''" onblur="if(this.value=='') this.value='buscar'">
+			</td>
+			<td>
+				<select name="thelist" onChange="combo(this, 'theinput')">
+					<option>Musica</option>
+				  	<option>Video</option>
+				  	<option>Photo</option>
+				</select>
+			</td>
+			<td>
+				<button>Buscar</button>
+			</td>
+		</tr>
+
+	</table>
+	<p>
+		</br>
+	</p>
+
+	<table border="1" cellpadding="7" style="margin: 0 auto;">
+		<tr>
+			<th> 
+				<label >Nombre</label> 
+			</th>
+			
+			<th>
+				<label >Artista</label>
+			</th>
+			<th>
+				<label >Album</label>
+			</th>
+			<th>
+				<label>Descargar</label>
+			</th>
+		</tr>
+
+		<tr>
+			<td><label >desconocido</label></td> 
+			<td><label>desconocido</label></td>
+			<td><label>desconocido</label></td>
+			<td><input type="checkbox"></td>
+		</tr>
+
+	</table>
+	
+	<p>
+		<br />
+	</p>
+	<center>
+	<button id="btn Descargar" >Descargar</button>
+	</center>
+
+
+</body>
+</html>
